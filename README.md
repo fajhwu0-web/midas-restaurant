@@ -6,12 +6,16 @@ Midas Restaurant Website
 
 Веб-сайт ресторана, созданный с использованием HTML, CSS и JavaScript.
 
-Функции сайта
+Функции сайта:
 
 - адаптивная верстка
 - карточки меню
 - интерактивные элементы
 - современный дизайн
 
-Сайт
+Изображение сайта:
+![preview](midas-restaurent-1.png)
+![preview](midas-restaurant-2.png)
+
+Сайт:
 https://fajhwu0-web.github.io/midas-restaurant/
