@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midas</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/popular-dishes.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    
+    <header>
+
+        <a href="" class="header-logo">
+            <img src="resources/Logo.svg" alt="">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="">Акция</a></li>
+                <li><a href="">Горячие</a></li>
+                <li><a href="">Холодное</a></li>
+                <li><a href="">Свежая выпечка</a></li>
+                <li><a href="">Десерты</a></li>
+                <li><a href="">Напитки</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-controls">
+
+            <div class="header-search">
+                <input type="text" placeholder="Поиск блюда">
+                <button class="header-search-btn passive">
+                </button>
+            </div>
+
+            <a href="">
+                <img src="resources/icons/user.svg" alt="">
+            </a>
+
+            <a href="">
+                <img src="resources/icons/cart-white.svg" alt="">
+            </a>
+        </div>
+    </header>
+    
+    <img src="resources/bg.png" alt="" class="background">
+
+    <main>
+        <section class="intro">
+            <div class="intro-secondary">
+                <h1>Доставка готовой еды из фермерских продуктов!</h1>
+
+                <img src="resources/main/dots_small.svg" alt="" class="intro-dots_small">
+
+                <a href="tel:+74998416729" class="intro-phone">+7 (499) 841-67-29</a>
+
+                <a href="mailto:delivery@midas.rest" class="intro-mail">delivery@midas.rest</a>
+
+                <div class="item-card">
+                    <img src="resources/items-mini/prev.png" alt="" class="item-img">
+                    <p class="item-name">Тирамису</p>
+                    <p class="item-portion">430г</p>
+                    <div class="item-buy">
+                        <p class="item-price">370 ₽</p>
+                        <button class="item-add-btn">
+                            <img src="resources/icons/cart_black.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-primary">
+                <img src="resources/meats.svg" alt="" class="intro-rec-img">
+                
+
+                <div class="intro-rec">
+                    <p class="rec-name">Стейк из лосося с овощами</p>
+                    <p class="rec-portion">250г</p>
+                    <p class="rec-description">Нежный стейк дикого лосося, пропитанный соком и ароматом слегка обжаренных фермерских овощей</p>
+                    <div class="rec-buy">
+                        <p class="rec-price">1200 ₽</p>
+                        <button class="rec-add-btn">
+                            <img src="resources/icons/cart_black.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <img src="resources/main/dots_large.svg" alt="" class="intro-dots_large">
+    
+            </div>
+        </section>
+
+        <section class="popular-dishes">
+            <h2 class="section-title">Популярные блюда</h2>
+
+            <div class="popular-dishes-grid" id="popular-dishes-grid">
+                <!-- Cards will be inserted here by fillCards.js -->
+
+            </div>
+        </section>
+
+        <section class="menu">
+
+            <div class="menu-header">
+                <h2 class="section-title">Меню</h2>
+
+                <div class="menu-controls">
+                    <button><img src="resources/icons/prev.svg" alt="" id="prev-button"></button>
+                    <button><img src="resources/icons/next.svg" alt="" id="next-button"></button>
+                </div>
+
+            </div>
+
+            <div class="menu-carousel-wrapper">
+
+                <div class="menu-carousel" id="menu-carousel">
+    
+                    <a class="menu-carousel-item promo">
+    
+                        <p>Акции</p>
+    
+                    </a>
+    
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-section">
+            
+            <div class="footer-nav">
+
+                <img src="resources/Logo.svg" alt="" class="footer-logo">
+
+                <ul class="footer-container">
+                    <li><a href="">Обратная связь</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Оплата</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contacts">
+                <a href="+7 (499) 841-67-29" class="footer-phone">+7 (499) 841-67-29</a>
+                <a href="delivery@midas.rest" class="footer-mail">delivery@midas.rest</a>
+            </div>
+            
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="footer-section">
+
+            <p class="footer-info">© 2009–2019, ООО «MIDAS», официальный сайт</p>
+    
+            <div class="footer-legal">
+                <a href="">Политика конфиденциальности</a>
+                <a href="">Пользовательское соглашение</a>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <script src="js/fillCards.js" type="module"></script>
+    <script src="js/fillCardMenu.js" type="module"></script>
+    <script src="js/carousel.js" ></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

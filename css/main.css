@@ -1,0 +1,233 @@
+.intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-secondary {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.intro-secondary h1 {
+    width: 312px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.intro-dots_small {
+    width: 184px;
+    position: relative;
+    left: -77px;
+    margin-bottom: 37px;
+}
+
+.intro-phone {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.intro-mail {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 284px;
+}
+
+.intro-primary {
+    position: relative;
+}
+
+.intro-rec-img {
+    width: 100%;
+    max-width: 1170px;
+}
+
+.intro-rec {
+    width: 356px;
+    height: 358px;
+    position: relative;
+    padding: 37px 56px 63px 56px;
+    left: 72px;
+    bottom: 220px;
+    background-image: url(../resources/main/intro_rec_bg.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rec-name {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.rec-portion {
+    padding: 2px 5px 3px 5px;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgb(204, 76, 76);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.rec-description {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 21px;
+    opacity: 0.8;
+}
+
+
+.rec-buy {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.rec-price {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.rec-add-btn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 209, 62);
+    border: none;
+    cursor: pointer;
+}
+
+.rec-add-btn img {
+    width: 26px;
+}
+
+.intro-dots_large {
+    height: 364px;
+    position: absolute;
+    right: 0;
+    top: 560px;
+}
+
+.section-title {
+    max-width: 663px;
+    margin-left: 555px;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.popular-dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr );
+    row-gap: 20px;
+    column-gap: 38px;
+    padding: 37px 50px 0 50px;
+}
+
+.menu {
+    margin-top: 144px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 52px;
+    padding-bottom: 64px;
+}
+
+.menu-controls {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-controls button:disabled {
+    opacity: 0.3;
+}
+
+.menu-carousel-wrapper {
+    height: 314px;
+    position: relative;
+    /* overflow: hidden; */
+    margin-bottom: 169px;
+}
+
+.menu-carousel {
+    position: absolute;
+    height: 314px;
+    padding: 0 51px ;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.4s ease;
+}
+
+.menu-carousel-item {
+    width: calc((100vw - 200px) / 6);
+    height: 314px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.menu-carousel-item:hover {
+    background-color: #09234E;
+    text-decoration: underline;
+    height: 334px;
+}
+
+.menu-carousel-item:hover img {
+    transform: rotate(180deg);
+}
+
+
+
+.menu-carousel-item img {
+    width: 162px;
+    height: 159px;
+    transition: 0.4s ease;
+}
+
+.menu-carousel-item img:nth-child(1) {
+    position: relative;
+    bottom: 50px;
+}
+
+.menu-carousel-item img:nth-child(3) {
+    position: relative;
+    top: 50px;
+}
+
+
+
+.menu-carousel-item.promo {
+    background-image: url(../resources/menu-plates/images/promo.png);
+    background-color: #B70000;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
